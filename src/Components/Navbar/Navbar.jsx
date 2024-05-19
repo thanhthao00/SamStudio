@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import { Component } from "react";
+import facebook from './facebook.png';
 
 class Navbar extends Component {
     state = { clicked: false, hasAccessToken: false };
@@ -21,15 +22,17 @@ class Navbar extends Component {
     render() {
         return (
             <div className='header'>
-                <div className="logo"><Link to="/home">Nice H&R</Link></div>
+                <div className="logo"><Link to="/home">Sam Studio</Link></div>
                 <div id='navbar' className={this.state.clicked ? "#navbar active": "navbar"}>
-                    <li><Link to="/home">Hotel</Link></li>
-                    <li><Link to="/rooms-page">Rooms</Link></li>
-                    <li><Link to="/menu">Menu</Link></li>
-                    <li><Link to="/about">About and Contact</Link></li>
-                    <li><Link to="/feedback">Feedback</Link></li>
-                    <li><Link to={this.state.hasAccessToken ? "/user" : "/Login_user"}>{this.state.hasAccessToken ? "User" : "Login"}</Link></li>
-                    <Link to="/book" className="action-btn">Book Now</Link>
+                    <li><Link to="/home">Trang chủ</Link></li>
+                    <li><Link to="/rooms-page">Dịch vụ</Link></li>
+                    <li><Link to="/menu">Concept</Link></li>
+                    <li><Link to="/about">Đồ cưới</Link></li>
+                    <li><Link to="/feedback">Áo dài</Link></li>
+                    <li><Link to="/feedback">Về chúng tôi</Link></li>
+                </div>
+                <div className="contact">
+                    <img src={facebook} alt="Logo"/>
                 </div>
                 <div className="dropdown-menu" onClick={this.handleClick}>
                     <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
