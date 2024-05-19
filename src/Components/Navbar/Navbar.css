@@ -67,7 +67,35 @@ li {
 
 .contact {
     position: relative;
-    left: 13%; 
+    left: 12%; 
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(7, 28, 30, 0.43);
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 10;
+    margin-left: -30%;
+    margin-top: 2.6%;
+}
+
+.dropdown-content.active {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 7% 5%;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(7, 28, 30, 0.43);
 }
 
 /*dropdown*/
