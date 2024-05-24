@@ -2,6 +2,9 @@ import React from 'react';
 import './HomePage.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import { Link } from "react-router-dom";
+import img1 from "../../Components/Image/7.jpg"
+import img2 from "../../Components/Image/8.jpg"
+import img3 from "../../Components/Image/9.jpg"
 
 const Home = () => {
     return (
@@ -36,7 +39,14 @@ const Home = () => {
                 Đội ngũ nhiếp ảnh gia tài năng và giàu kinh nghiệm của chúng tôi sẽ làm việc tận tâm để tạo ra những bức ảnh đầy cảm xúc, thể hiện trọn vẹn tình yêu và niềm hạnh phúc của bạn.
                 </p>
                 </div>
-
+            </div>
+            <div className="text-wrapper-5">Concept</div>
+            <div className="overlap-4">
+                <div className="image-container">
+                    <img src={img1} alt="Image 1" class="image"/>
+                    <img src={img2} alt="Image 2" class="image"/>
+                    <img src={img3} alt="Image 3" class="image"/>
+                </div>
             </div>
         </div>
     );

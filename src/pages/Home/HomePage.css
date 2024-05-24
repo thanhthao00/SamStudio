@@ -144,3 +144,50 @@
     top: 180%;
     width: 50%;
 }
+
+.home-page .overlap-4 {
+    height: 80%;
+    left: 0%;
+    position: absolute;
+    top: 300%;
+    width: 20%;
+}
+
+.home-page .text-wrapper-5 {
+    color: #1e1e1e;
+    font-family: 'Junge', Helvetica, sans-serif;
+    font-size: 350%;
+    font-weight: 400;
+    left: 0%;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 393%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.home-page .overlap-4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    top: 400%;
+}
+
+.image-container {
+    display: flex;
+    align-items: center; 
+    height: 100vh;
+    width: 100%;
+    padding: 10%; 
+}
+
+.image {
+    width: 160%; 
+    height: 85%;
+    margin: 0 25%;
+    object-fit: cover;
+}
