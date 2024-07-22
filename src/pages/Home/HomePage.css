@@ -145,14 +145,6 @@
     width: 50%;
 }
 
-.home-page .overlap-4 {
-    height: 80%;
-    left: 0%;
-    position: absolute;
-    top: 300%;
-    width: 20%;
-}
-
 .home-page .text-wrapper-5 {
     color: #1e1e1e;
     font-family: 'Junge', Helvetica, sans-serif;
@@ -171,23 +163,71 @@
 }
 
 .home-page .overlap-4 {
+    height: 80%;
+    left: 0%;
+    position: absolute;
+    top: 393%;
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    top: 400%;
 }
+
 
 .image-container {
     display: flex;
     align-items: center; 
+    justify-content: center;
     height: 100vh;
     width: 100%;
-    padding: 10%; 
+    padding: 7%;
+}
+
+.image-wrapper {
+    position: relative;
+    flex: 1 0 10%; 
+    margin: 0 1%; 
 }
 
 .image {
-    width: 160%; 
-    height: 85%;
-    margin: 0 25%;
+    width: 100%; 
+    height: auto; 
+    display: block; 
     object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    pointer-events: none; 
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.small-text {
+    top: 97%;
+    font-size: 125%; 
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1; 
+    padding: 2% 39%; 
+    border-radius: 10%;
+}
+
+.full-text {
+    font-size: 200%; 
+    opacity: 0; 
+}
+
+.image-wrapper:hover .small-text {
+    opacity: 0; 
+}
+
+.image-wrapper:hover .full-text {
+    opacity: 1; 
 }

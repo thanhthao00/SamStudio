@@ -43,9 +43,21 @@ const Home = () => {
             <div className="text-wrapper-5">Concept</div>
             <div className="overlap-4">
                 <div className="image-container">
-                    <img src={img1} alt="Image 1" class="image"/>
-                    <img src={img2} alt="Image 2" class="image"/>
-                    <img src={img3} alt="Image 3" class="image"/>
+                    <div className="image-wrapper">
+                        <img src={img1} alt="Image 1" className="image" />
+                        <div className="overlay-text small-text">Concept 1</div>
+                        <div className="overlay-text full-text">Concept 1</div>
+                    </div>
+                    <div className="image-wrapper">
+                        <img src={img2} alt="Image 2" className="image" />
+                        <div className="overlay-text small-text">Concept 2</div>
+                        <div className="overlay-text full-text">Concept 2</div>
+                    </div>
+                    <div className="image-wrapper">
+                        <img src={img3} alt="Image 3" className="image" />
+                        <div className="overlay-text small-text">Concept 3</div>
+                        <div className="overlay-text full-text">Concept 3</div>
+                    </div>
                 </div>
             </div>
         </div>
